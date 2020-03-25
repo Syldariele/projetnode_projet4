@@ -1,0 +1,14 @@
+CODE HTTP :
+
+200-299 : ok
+
+300-399 : redirections
+    - 301 : redirection permanante
+    - 302 : redirection temporaire
+
+400-499 : client a eu un problème
+    - 403 : non autorisé
+    - 404 : j'ai pas trouvé
+
+500-599 : serveur a eu un problème
+    - 503 : service n'est pas disponible
