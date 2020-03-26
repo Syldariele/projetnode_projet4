@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Suppression d'utilisateur</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>Suppression d'utilisateur</h1>
+    <form action="/api/user/delete" method="POST">
+        <input type="text" name="userId" placeholder="ID de l'utilisateur à supprimer :" />
+        <button type="submit" >Supprimer l'utilisateur</button>
+    </form>
+</body>
+</html>

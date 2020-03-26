@@ -52,3 +52,24 @@ app.route("/api/user/create")
             }
         );
     });
+
+app.route("/api/user/delete")
+    .get((req, res) => res.status (503).send({ status: "ERROR"}))
+    .post((req, res) => {
+        const sqlConnection = mysql.createConnection(sqlConfig);
+
+        sqlConnection.query(
+            "DELETE FROM node_users WHERE id = ?",
+            [ req.body.userId],
+            (error, result) => {
+                if (error) {
+                    console.log("ERROR :", error.code);
+                    res.status(503).send({ status: "ERROR"});
+                } else {
+                    console.log(result);
+                    res.send({ status: "OK" });
+                }
+                sqlConnection.end();
+            }
+        );
+    });
