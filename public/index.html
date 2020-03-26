@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<h1>Inscription</h1>
+<form action="/api/user/create" method="post" class="form">
+    <div class="form">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email"/>
+    </div>
+    <div class="form">
+        <label for="pass">Enter your password: </label>
+        <input type="password" name="pass" id="pass"/>
+    </div>
+    <div class="form">
+        <label for="firstname">Enter your firstname: </label>
+        <input type="text" name="firstname" id="firstname"/>
+    </div>
+    <div class="form">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name"/>
+    </div>
+    <div class="form">
+        <label for="birthdate">Enter your birhtdate: </label>
+        <input type="date" name="birthdate" id="birthdate"/>
+    </div>
+
+    <div class="form">
+        <input type="submit" value="Subscribe!">
+    </div>
+</form>
+</body>
+</html>

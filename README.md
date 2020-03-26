@@ -1,0 +1,8 @@
+- [X] créer un dossier public
+- [X] l'utiliser pour les fichiers statics dans express
+- [X] créer un index.html avec un formulaire html qui contient les champs suivants :
+    - [X] email
+    - [X] password
+    - [X] firstname
+    - [X] lastname
+    - [X] birthdate
